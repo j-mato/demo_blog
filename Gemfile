@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+
 ruby "3.1.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
@@ -48,8 +49,7 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
-# make errors better looking
-  gem 'better_errors', '~> 2.9', '>= 2.9.1'
+
 
 # Bulma CSS
   gem 'bulma-rails', '~> 0.9.3'
@@ -74,7 +74,18 @@ group :development do
   gem 'guard', '~> 2.18'
 
   # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  #gem 'guard-livereload', '~> 2.5', '~> 2.5.2', require: false
+
+  #Pry is a runtime developer console and IRB alternative with powerful introspection capabilities. Pry aims to be more than an IRB replacement. It is an attempt to bring REPL driven programming to the Ruby language.
+
+
+  #gem 'listen', '>= 3.0.5', '< 3.2'
+  #gem 'spring'
+  #gem 'spring-watcher-listen', '~> 2.0.0'
+  #gem 'rack-livereload'
+
+  # make errors better looking
+  gem 'better_errors', '~> 2.9', '>= 2.9.1'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
@@ -88,4 +99,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+
 end
