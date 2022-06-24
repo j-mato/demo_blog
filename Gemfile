@@ -48,6 +48,19 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+# make errors better looking
+  gem 'better_errors', '~> 2.9', '>= 2.9.1'
+
+# Bulma CSS
+  gem 'bulma-rails', '~> 0.9.3'
+
+
+# Simple Form
+  gem 'simple_form', '~> 5.1'
+
+
+  
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
@@ -56,6 +69,12 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+
+  # Guard is a command line tool to easily handle events on file system modifications.
+  gem 'guard', '~> 2.18'
+
+  # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
